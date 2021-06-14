@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    
+
+
+
+
+    <div class="navbar bg-danger navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a href="@Url.Action("Index", "Home")"><img style="width:120px; height:60px;" src="data:image/jpeg;base64,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" title="title" alt="additional title" /></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Products", "About", "Home")</li>
+                    
+                    <li class="dropdown"><a class="dropdown-toggle" role="button" aria-expanded="false" href="#" data-toggle="dropdown">Category <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>@Html.ActionLink("Medicines", "Index", "Home", null, new { id = "item 1" })</li>
+                            <li>@Html.ActionLink("Injection", "Index", "Home", null, new { id = "item 2" })</li>
+                            <li>@Html.ActionLink("Immunity Booster", "Index", "Home", null, new { id = "item 3" })</li>
+                        </ul>
+                    </li>
+
+                    <li style="float:right">@Html.ActionLink("Login/Signup", "Index", "Home")</li>
+                    <li style="float:right">@Html.ActionLink("Cart", "About", "Home")</li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 p-2" style="float:right; padding:1%">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+                </form>
+
+
+            </div>
+
+            @*<div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav text-right">
+
+                    </ul>
+                </div>*@
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer class="bg-danger">
+            <div class="container">
+                <div class="col-md-4">
+                    <p><b>About Us</b></p>
+                    <p>
+                        UrbanMediMart is an online, healthcare media publishing company. We provide easy-to-read, in-depth, authoritative medical information for consumers via its robust, user-friendly, interactive website and also delivers medicine at your doorsteps.
+
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p><b>Our Companies</b></p>
+                    <ul>
+                        <li>Cipla</li>
+                        <li>Bharat Biotech</li>
+                        <li>Dr. Reddy's</li>
+                        <li>Biocon</li>
+                        <li>Sun pharmetical Industries ltd.</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <p><b>Contact Us</b></p>
+                    <ul>
+                        <li>URL: www.urbanmedimart.com</li>
+                        <li>Email:urbanmedimart@yahoo.com</li>
+                        <li>Phone no: +919988567888</li>
+                    </ul>
+                </div>
+            </div>
+
+            @*<p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>*@
+
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
